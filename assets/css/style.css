@@ -1,0 +1,240 @@
+/* #d1e8f6 -> azul */
+/* #feff99 -> amarelo*/
+
+html, body{
+	min-height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: "Century Gothic", Helvetica, sans-serif;
+}
+
+body{
+	height: 100%;
+}
+
+/* Navbar */
+.logo-navbar img{
+	width: 180px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10%;
+	border-radius: 35px;
+	z-index:5;
+}
+
+.navbar{
+	width: 100%;
+	height: 70px;
+	display: inline-flex;	
+}	
+
+.nav-item{
+	display: inline-flex;
+	justify-content: flex-end;
+	text-decoration: none;
+	border: 1px #000;
+	align-items: center;
+}
+
+.nav-item:hover{
+	background-color: #feff99;
+}
+
+.nav-links{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	margin:0;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	font-size: 15px;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #000;
+	font-weight: 600;
+}
+
+.navbar ul li a:hover{
+	color: #000;
+}
+
+/* Slider */
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin: 0;
+	position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { 
+    display: none; 
+}
+
+.slide-container { 
+    display: block; 
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    transition: all .3s ease-in;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+.nav label {
+    width: 62px;
+    height: 100%;
+    display: none;
+    position: absolute;
+	opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #333333;
+    font-size: 70px;
+    text-align: center;
+    line-height: 100vh;
+    font-family: "Varela Round", sans-serif;
+}
+
+.nav label:hover { 
+    opacity: 1; 
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input:checked + .slide-container .nav label { 
+    display: block; 
+}
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: solid 2px #fff;
+    
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: #fff;
+}
+
+/* Parallax */
+.parallax{
+	width: 100%;
+	height: 20vh;
+	background: url(../img/aurumite.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.about-box{
+	width: 100%;
+	height: 440px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;	
+	-webkit-box-shadow: 0px 3px 27px;
+	box-shadow: 0px 3px 27px;
+}
+
+.about-text-left{
+	background: #fff;
+	width: 50%;
+	text-align: justify;
+	align-self: center;
+	padding-left: 10px;
+}
+
+.about-text-right{
+	background: #fff;
+	width: 50%;
+	text-align: justify;
+	align-self: center;
+	padding-right: 10px;
+}
+
+.about-text-left h3, .about-text-right h3{
+	text-align: center;
+	margin: 0;
+}
+
+.photo{
+	right: 0;
+	width: 50%;
+	display: inline-flex;
+	justify-content: flex-end;
+	padding: 20px;
+}
+
+.photo img{
+	width: 100%;
+	-webkit-box-shadow: 0px 1px 10px;
+	box-shadow: 0px 1px 10px;
+	object-fit: cover;
+}
+
+/* Rodapé */
+#rodape{
+	background-color: #000;
+	color:#fff;
+	text-align: center;
+	font-size: 15px;
+}
