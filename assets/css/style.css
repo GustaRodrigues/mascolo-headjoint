@@ -239,15 +239,24 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	font-size: 15px;
 }
 
+.title{
+	background-color: #5b5b5b;
+}
+
 .title a h1{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: normal;
-	font-size: 50px;
+	font-size: 60px;
 	margin: 0;
-	padding-top: 3%;
+	padding-top: 2%;
+}
+
+.title a h1 span{
+	color: #3d85c6;
 }
 
 .title a{
-	color: #fff;
+	color: #f1c232;
 	text-decoration: none;
 }
 
@@ -264,7 +273,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 .footer-about{
 	display: flex;
 	justify-content: center;
-	margin-top: 3%;
+	background-color: #5b5b5b;
+	padding: 3% 0 3% 0;
 }
 
 .footer-text{
@@ -282,4 +292,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	margin: 1%;
 	margin-top: 5%;
 	text-align: left;
+}
+
+.contacts{
+	width: 100%;
+	align-self: center;
+	text-align: center;
+}
+
+.icon{
+	height: 25px;
+	vertical-align: sub;
 }
