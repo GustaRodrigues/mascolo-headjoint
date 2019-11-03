@@ -11,6 +11,7 @@
     
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
 </head>
 <body>
@@ -24,19 +25,16 @@
         <div class="navbar">
             <ul class="nav-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bocal">O BOCAL</a>
+                    <a class="nav-link scroll" href="#bocal">O BOCAL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">GALERIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#rodape">SOBRE NÓS</a>
+                    <a class="nav-link scroll" href="#rodape">SOBRE NÓS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contato">CONTATO</a>
+                    <a class="nav-link scroll" href="#contato">CONTATO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">COMPRAR</a>
@@ -102,8 +100,9 @@
     </section>
     
     <!--início sobre-->
-    <section id="bocal"></section>
-    <section class="parallax"></section>
+    <section id="bocal">
+    <section class="spacing
+    "></section>
     
     <div class="about-box">
         <div class="about-text-left">
@@ -119,7 +118,8 @@
         </div>
     </div>
     
-    <section class="parallax"></section>
+    <section class="spacing
+    "></section>
     
     <div class="about-box">
         <div class="photo">
@@ -134,7 +134,8 @@
         </div>
     </div>
 
-    <section class="parallax"></section>
+    <section class="spacing
+    "></section>
 
     <div class="about-box">
         <div class="about-text-left">
@@ -150,8 +151,8 @@
         </div>
     </div>
 
-    <section class="parallax"></section>
-
+    <section class="spacing"></section>
+    </section>
     <!--Início Rodapé-->
     <footer id="rodape">
         <div class="title">
@@ -161,8 +162,10 @@
         </div>
         
         <div class="footer-about">
-            <div class="foto-rodape">
-                <img src="assets/img/luthieria.jpg" />
+            <div class="borda">
+                <div class="foto-rodape">
+                    <img src="assets/img/luthieria.jpg" />
+                </div>
             </div>
 
             <div class="footer-text">
@@ -172,6 +175,8 @@
                     você tem tudo que precisa com qualidade, segurança e melhor o custo-benefício.</p>
             </div>
         </div>
+        
+        <div class="gradiente"></div>
 
         <div id="contato" class="about">
             <div class="mapa">
@@ -180,18 +185,33 @@
 
             <div class="contacts">
                 <div class="addres">
-                    <p><img src="assets/img/local.png" class="icon">R. Abadiânia, 673 - Vila Guilhermina, São Paulo - SP, 03541-000 - Próximo a estação do metrô Guilhermina Esperança</p>
+                    <p><img src="assets/img/local.png" class="icon icon-align">R. Abadiânia, 673 - Vila Guilhermina, São Paulo - SP, 03541-000 - Próximo a estação do metrô Guilhermina Esperança</p>
                     <p><img src="assets/img/telefone.png" class="icon"> (11)99366-0470</p>
                     <p><img src="assets/img/email.png" class="icon"> nilsonmascolo@gmail.com</p>
+                </div>
+
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/mascoloflutecenter/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/mascoloflutecenter/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511993660470&text=&source=&data="><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/nilsonmascolo"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="bandeira">
+                    <img src="assets/img/pay.png">
                 </div>
             </div>
         </div>
 
-        <div>
-            <label>Copyright© 2019</label>
-        </div>
+        <label>Copyright © 2019</label>
     </footer>
     
-    <script src="assets/js/scripts.js"></script>    
+    <!--Scripts-->
+    <script src="assets/components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/components/popper.js/dist/popper.min.js"></script>
+    <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

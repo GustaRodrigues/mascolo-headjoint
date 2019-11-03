@@ -174,15 +174,17 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: #fff;
 }
 
-/* Parallax */
-.parallax{
-	width: 100%;
-	height: 18vh;
-	/*background: url(../img/aurumite.jpg);*/
+/* Sobre o Bocal */
+#bocal{
+	/*background-image: url(../img/logo-bocal.jpg);*/
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-  	background-size: cover;
+}
+
+.spacing{
+	width: 100%;
+	height: 18vh;
 }
 
 .about-box{
@@ -191,8 +193,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: #fff;
 	display: flex;
 	justify-content: space-between;	
-	-webkit-box-shadow: 0px 3px 27px;
-	box-shadow: 0px 3px 27px;
+	-webkit-box-shadow: 0px 3px 20px;
+	box-shadow: #a7a2a2 0px 3px 20px;
 }
 
 .about-text-left{
@@ -260,14 +262,36 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	text-decoration: none;
 }
 
+.borda{
+	display: block;
+	background-color: #f7f7f7;
+	border-radius: 2%;
+	width: 80vh;
+}
+
 .foto-rodape{
 	display: inline-flex;
 	justify-content: flex-end;
-	padding: 20px;
+	margin: 15px 0 15px 0;
 }
+
 .foto-rodape img{
 	width: 75vh;
 	object-fit: cover;
+	border-radius: 2%;
+}
+
+.foto-rodape img:hover{
+	-webkit-box-shadow: 0px 1px 10px;
+	box-shadow: #333131 7px 7px 30px;
+	transition: 0.3s;
+	width: 80vh;
+	margin: 0;
+}
+
+.borda:hover{
+	background: #d2cece;
+	transition: 0.3s;
 }
 
 .footer-about{
@@ -281,7 +305,13 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	width: 50%;
 	text-align: justify;
 	align-self: center;
+	margin-left: 10px;
 	font-size: 17px;
+}
+
+.gradiente{
+	background: linear-gradient(0, #333131, #5b5b5b);
+	height: 45px;
 }
 
 .about{
@@ -302,5 +332,61 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 .icon{
 	height: 25px;
+	vertical-align: middle;
+}
+.icon-align{
 	vertical-align: sub;
+}
+
+.social ul{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.social ul li {
+    list-style: none;   
+}
+
+.social ul li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 4px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 50%;
+	font-size: 25px;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.social ul li:nth-child(1) a:hover {
+	background: #3b5999;
+	transition: 0.2s;
+}
+
+.social ul li:nth-child(2) a:hover {
+	background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+	transition: 0.2s;
+}
+
+.social ul li:nth-child(3) a:hover {
+	background: #00e676;
+	transition: 0.2s;
+}
+
+.social ul li:nth-child(4) a:hover {
+	background: #f00;
+	transition: 0.2s;
+}
+
+.bandeira img{
+	width: 300px;
+}
+
+@media (max-width: 800px){
+	.bandeira img{
+		width: 100px;
+	}
 }
