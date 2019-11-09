@@ -61,10 +61,6 @@ body{
 	font-weight: 600;
 }
 
-.navbar ul li a:hover{
-	color: #000;
-}
-
 /* Slider */
 .slides {
     padding: 0;

@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 10) {
+    if (scroll >= 1) {
       $("#nav-logo").fadeOut();
     } else {
       $("#nav-logo").fadeIn();
