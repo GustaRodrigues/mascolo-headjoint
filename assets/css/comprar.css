@@ -63,11 +63,6 @@ body{
 	color: #000;
 }
 
-/* Seção de Fotos */
-#porta-labios{
-    margin: 0 20px 10px 20px;
-}
-
 /* Rodapé */
 #rodape{
 	background-color: #333131;
@@ -75,7 +70,6 @@ body{
 	text-align: center;
 	font-size: 15px;
 }
-
 
 .title a h1{
 	font-family: 'Courier New', Courier, monospace;

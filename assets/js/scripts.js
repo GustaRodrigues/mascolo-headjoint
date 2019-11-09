@@ -4,3 +4,12 @@ jQuery(document).ready(function($) {
      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
     });
 });
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 10) {
+      $("#nav-logo").fadeOut();
+    } else {
+      $("#nav-logo").fadeIn();
+    }
+  });
